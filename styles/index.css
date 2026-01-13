@@ -1,0 +1,549 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  font-family: Roboto;  
+}
+body{
+  margin: 0;
+  background-color: rgb(255, 255, 255);  
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  z-index: 100;
+
+  opacity: 0;               
+  animation: fadeInUp 1s forwards; 
+  animation-delay: 0.3s;  
+}
+
+.header .left-side{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.neil-tag{
+  color: white;
+  background-color: rgb(29, 29, 29);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 1s, opacity 0.15s, smooth;
+}
+
+.neil-tag:hover{
+  transform: rotate(360deg);
+}
+
+.neil-tag:active{
+  opacity: 0.7;
+}
+
+.neil-tag .span1{
+  color: white;
+}
+
+.neil-tag .span2{
+  color: rgb(255, 255, 255);
+}
+
+.header .middle{
+  flex: 1;
+  display: flex;
+}
+
+.header ul{
+  list-style: none;
+  display: flex;
+  flex: 1;
+  color: black;
+  justify-content: center;
+  gap: 60px;
+  cursor: pointer;
+}
+
+.header a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px; 
+}
+
+.header .right-side{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+}
+
+
+.content{
+  width: 100vw;
+  height: 200px;
+  display:flex;
+  flex-direction: row;
+
+  opacity: 0;               
+  animation: fadeInUp 0.5s forwards; 
+  animation-delay: 0.1s;
+  margin-top: 200px;    
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+  }
+}
+
+.content .info-section{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+  
+}
+
+.content .picture-section{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 400px;
+}
+
+.profile-img{
+  width: 320px;
+  height: 320px;
+  border-radius: 160px; 
+  filter: brightness(90%);
+  background-color: rgb(255, 255, 255);
+}
+
+.info-section .name{
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.little-info{
+  color: rgb(139, 139, 139);
+  font-size: 18px;
+  width: 500px;
+  line-height: 32px;
+}
+
+.view-projects-btn{
+  font-size: 14px;
+  padding: 10px 18px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.view-projects-btn:hover{
+  background-color: rgb(241, 241, 241);
+}
+
+.download-cv-btn{
+  font-size: 14px;
+  padding: 10px 18px;
+  color: white;
+  border: solid 1px white;
+  background-color: rgb(39, 39, 39);
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.download-cv-btn:hover{
+  background-color: rgb(73, 73, 73);
+}
+
+.download-cv-btn:active{
+  opacity: 0.7;
+}
+
+.view-projects-btn:active{
+  opacity: 0.7;
+}
+
+.home a{
+  color: #555;
+}
+
+.home a:hover, .skills a:hover, .portfolio a:hover, .contact-me a:hover{
+  color: #555;
+}
+
+.home a:active, .skills a:active, .portfolio a:active, .contact-me a:active{
+  opacity: 0.7;
+}
+
+
+
+.contact-me-list img{
+  width: 30px;
+  height: 30px;
+}
+
+.email-logo{
+  
+}
+
+.ig-logo{
+  
+}
+
+.about-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+  margin-bottom: -25px;
+}
+
+.about-me-up p{
+  color: rgb(151, 151, 151);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  margin-top: 80px;
+}
+
+.about-me-down p{
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 0.05em;
+  margin-top: 0;
+}
+
+.background-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-info-left{
+  display: flex;
+}
+
+.background-info-img{
+  height: 570px;
+  width: 420px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.background-info-right{
+  margin-right: 150px;
+}
+
+.experience-education-info{
+  display: flex;
+}
+
+.experience-square, .education-square{
+  width: 400px;
+  height: 180px;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-square{
+  margin-left: 20px;
+}
+
+.experience-square{
+  margin-left: 50px;
+}
+
+.experience-square img, .education-square img{
+  width: 35px;
+}
+
+.exp-txt{
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-size: 20px;
+}
+
+.exp-txt-1, .exp-txt-2{
+  color: rgb(94, 94, 94);
+  font-size: 16px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+
+
+.brief-info{
+  width: 800px;
+  margin-left: 50px;
+  margin-top: 30px;
+  line-height: 25px;
+  font-size: 14px;
+  color: rgb(94, 94, 94);
+}
+
+.skills-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+  margin-bottom: -25px;
+}
+
+.skills-me-up p{
+  color: rgb(151, 151, 151);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.skills-me-down p{
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 0.05em;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+.skills-container{
+  display: flex;
+  justify-content: center;
+}
+
+.skills-container1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-container1 p{
+ color: rgb(151, 151, 151);
+}
+
+.html-box, .css-box, .javascript-box,
+.php-box, .figma-box, .git-box, .mysql-box{
+  height: 35px;
+  width: 150px;
+  border: solid 1px rgb(185, 185, 185);
+  border-radius: 2px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.html-box p, .css-box p, .javascript-box p,
+.php-box p, .figma-box p, .git-box p, .mysql-box p{
+  color: black;
+}
+
+.contacts-section{
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-container{
+  height: 60px;
+  width: 500px;
+  border: solid 2px rgb(185, 185, 185);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkedin-link{
+  text-decoration: none;
+  color: black;
+}
+
+.linkedin-link:hover{
+  text-decoration: underline;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 30px;
+  color: rgb(151, 151, 151);
+}
+
+
+
+/* ============================= */
+/* GLOBAL RESPONSIVE SAFETY NET */
+/* ============================= */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ============================= */
+/* TABLET & SMALL LAPTOPS */
+/* ============================= */
+@media (max-width: 1024px) {
+
+  /* HERO SECTION */
+  .content {
+    margin-top: 140px;
+  }
+
+  .content .info-section,
+  .content .picture-section {
+    margin: 0;
+    padding: 0 5vw;
+  }
+
+  .little-info {
+    width: 100%;
+  }
+
+  .background-info-right {
+    margin-right: 0;
+  }
+
+  .brief-info {
+    width: 90%;
+    margin-left: 0;
+  }
+}
+
+/* ============================= */
+/* MOBILE (PHONES) */
+/* ============================= */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header .left-side,
+  .header .right-side {
+    width: auto;
+  }
+
+  .header ul {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* HERO */
+  .content {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 120px;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .info-section {
+    padding: 20px;
+  }
+
+  .little-info {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* ABOUT */
+  .background-info {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .background-info-img {
+    width: 85%;
+    height: auto;
+  }
+
+  .experience-education-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .experience-square,
+  .education-square {
+    width: 90%;
+    margin: 0;
+  }
+
+  .brief-info {
+    text-align: center;
+  }
+
+  /* SKILLS */
+  .skills-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .html-box, .css-box, .javascript-box,
+  .php-box, .figma-box, .git-box, .mysql-box {
+    width: 180px;
+    margin-right: 0;
+  }
+
+  /* CONTACT */
+  .contacts-container {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    padding: 15px;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* ============================= */
+/* VERY SMALL PHONES */
+/* ============================= */
+@media (max-width: 480px) {
+
+  .about-me-down p,
+  .skills-me-down p {
+    font-size: 26px;
+  }
+
+  .info-section .name {
+    font-size: 24px;
+  }
+
+  .view-projects-btn,
+  .download-cv-btn {
+    display: block;
+    margin: 10px auto;
+  }
+}
